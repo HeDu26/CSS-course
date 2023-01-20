@@ -1,0 +1,71 @@
+/* 
+Función Var()
+Aplica solo dentro de su ambiente familiar (Padres, hijos, nietos)
+incluyendo el elemento body y html(:root)
+*/
+
+:root {
+  color: darkolivegreen;
+  --default-bg-color: skyblue;
+}
+
+html {
+  color: #f00;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.custom-props-1 {
+  --primary-color: gray;
+  --font-size: 32px;
+  background-color: var(--primary-color);
+}
+
+.custom-props-2 {
+  background-color: var(--default-bg-color);
+}
+
+.custom-props-3 {
+  font-size: var(--font-size);
+}
+
+.title-props {
+  --primary-color: navy;
+  color: var(--primary-color, #ff0000);
+  background-color: var(--default-bg-color);
+}
+
+/* 
+calc()
+Importante para que funcione dejar espacio entre el operador(+) y las variables 
+*/
+
+.ch-10 {
+  --padding-size: 2ch;
+  --num-ch: 10ch;
+  background-color: var(--default-bg-color);
+  font-size: 2rem;
+  padding: var(--padding-size);
+  width: calc(var(--num-ch) + var(--padding-size) * 2);
+}
+
+.min-max {
+  background-color: var(--default-bg-color);
+  margin-top: 1rem;
+  width: min(300px, 20vw);
+  height: max(200px, 25vh);
+}
+
+/* Función Clamp(1er valor, 2do valor, 3er valor) 
+1er valor- Ideal
+2do valor- dinamico
+3er valor- Máximo
+*/
+h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}

@@ -1,0 +1,107 @@
+/* 
+-background-color: Define el color de fondo del elemento
+-background-image: define la imagen de fondo del elemento
+-background-repeat: define cómo se repite la imagen de fondo en el elemento
+-background-size:Define el tamaño de la imagen de fondo, primer valor x, segundo valor y
+   +COVER cambia el tamaño de la imagen de fondo para asegurarse de que permanezca completamente visible
+   +CONTAIN cambia el tamaño de la imagen de fonndo para asegurarse de que el elemento esté completamente cubierto
+-background-position: 
+   Define la posición de la imagen de fondo, primer valor x, segundo y, si no se especifica segundo valor, este será center.
+   Aparte de valores númericos podemos indicar el posicionamiento con las palabras:center, top, bottom, left and right.
+-background-clip: define cuanto debe extenderse el fondo dentro del elemento.
+-background-origin: define el origen de la imagen de fondo.
+-background-attachment: define cómo se comportará la imagen de fondo al desplazarse por la página.
+*/
+
+.box {
+  margin: 2rem auto;
+  width: 300px;
+  height: 300px;
+  border: thick dashed red;
+}
+
+.bg-color {
+  background-color: black;
+}
+.bg-image {
+  background-image: url("../assets/paisaje.jpg");
+}
+
+.bg-size {
+  background-image: url("../assets/paisaje.jpg");
+  background-size: 300px 150px;
+  background-size: cover;
+  background-size: contain;
+}
+
+.bg-repeat {
+  background-image: url("../assets/paisaje.jpg");
+  background-size: 100px;
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+}
+
+.bg-position {
+  background-color: skyblue;
+  background-image: url("../assets/paisaje.jpg");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: bottom right;
+}
+
+/* Defines how far the background should extend within the element. */
+.bg-clip {
+  background-color: skyblue;
+  background-image: url("../assets/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-clip: border-box; /* Default */
+  background-clip: padding-box;
+  background-clip: content-box;
+  padding: 1rem;
+}
+
+/* Defines the origin of the background image. */
+.bg-origin {
+  background-color: darkgoldenrod;
+  background-image: url("../assets/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-origin: padding-box; /* Default */
+  background-origin: content-box;
+  background-origin: border-box;
+  padding: 1rem;
+}
+
+.bg-attachment {
+  background-color: skyblue;
+  background-image: url("../assets/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  /* background: red; */
+}
+
+.bg-multiple {
+  width: 50%;
+  height: 30vh;
+  /* 
+  1) El URL de la imagen pegado al punto y coma estara más al fondo 
+  2)Todas las propiedades del background trabajan con la coma(la que este pegada a ";" estará más al fondo)
+  */
+  background-image: url("../assets/lion.png"), url("../assets/paisaje.jpg");
+  background-repeat: repeat, no-repeat;
+  background-size: 10%, cover;
+}
+
+.bg-art {
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/arbol-silueta.png"),
+    url("../assets/arboles.png");
+}

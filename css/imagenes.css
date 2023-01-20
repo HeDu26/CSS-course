@@ -1,0 +1,26 @@
+/* Si queremos que la imagen se ajuste sola simplemente empleamos max-width 100% y height auto */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: medium solid black;
+  width: 400px;
+}
+
+/* 
+object-fit y object- position para tamaños específicos
+*/
+.card img {
+  background-color: darkorange;
+  height: 300px;
+  object-fit: fill;
+  object-fit: cover;
+  object-fit: contain;
+  object-fit: none;
+  object-position: left top;
+  object-position: right bottom;
+  object-position: 50% 50%;
+  object-position: left center;
+}

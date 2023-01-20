@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="temario-css">
+      <h1>Aprendiendo CSS</h1>
+      <p><i>Cascading Style Sheets</i>-Hojas de estilo en cascada</p>
+      <h2>Temario del Curso</h2>
+      <ul>
+        <li><a href="index.html#selectores-basicos">Selectores básicos</a></li>
+        <li>
+          <a href="index.html#selectores-avanzados">Selectores avanzados</a>
+        </li>
+        <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+        <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+        <li><a href="index.html#agrupar-selectores">Agrupar selectores</a></li>
+        <li><a href="index.html#algoritmo-css">El algoritmo de CSS ()</a></li>
+        <li>
+          <a href="index.html#style-normal-reset"
+            >Reseteo y Normalización de estilos</a
+          >
+        </li>
+        <li>
+          <a href="index.html#prefijos-navegacion"
+            >Prefijos de los navegadores</a
+          >
+        </li>
+        <li><a href="box-model.html">Modelo de caja</a></li>
+        <li><a href="positions.html">Posicionamiento en CSS</a></li>
+        <li>
+          <a href="positions-examples.html"
+            >Ejercicios de Posicionamiento CSS</a
+          >
+        </li>
+        <li><a href="colors.html">Colores en CSS</a></li>
+        <li><a href="units.html">Unidades de medida CSS</a></li>
+        <li>
+          <a href="Variables-functions.html">Variables y funciones en CSS</a>
+        </li>
+        <li><a href="fonts-texts.html">Estilos de fuentes y textos</a></li>
+        <li><a href="Border-outline.html">Bordes y Outlines</a></li>
+        <li><a href="backrounds.html">Fondos en CSS</a></li>
+        <li><a href="imagenes.html">Imagenes en CSS</a></li>
+        <li><a href="list-items.html">Listas en CSS</a></li>
+        <li><a href="tablas.html">Estilos de tablas</a></li>
+        <li><a href="forms.html">Formulario en css</a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </article>
+    <hr />
+    <article id="selectores-basicos">
+      <h2>Selectores básicos</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio mollitia
+        iure eos excepturi vitae iste sapiente. Cupiditate eos delectus dolore
+        fuga labore hic. Veniam velit quidem cum, necessitatibus ipsam fugiat!
+      </p>
+      <p id="parrafo-dos">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia at
+        blanditiis ratione eligendi velit nostrum dolorem in, ex, ullam
+        temporibus corporis omnis ipsam provident repudiandae facilis deleniti
+        earum facere.
+      </p>
+      <p class="text-32 bg-skyblue">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+        officia quia fugiat dolorem. Neque harum in a sit reprehenderit sapiente
+        fugiat consectetur sequi totam, pariatur odit necessitatibus soluta
+        blanditiis cupiditate!
+      </p>
+      <p class="text-20 bg-steelblue text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit
+        tenetur culpa, blanditiis voluptatum laudantium repellendus rerum animi
+        eum, assumenda dolorem. Nesciunt illum recusandae atque, nisi sapiente
+        veniam laborum soluta!
+      </p>
+      <p class="text-32 bg-steelblue text-white">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+        cupiditate quia, sunt maiores omnis nesciunt deleniti nisi iste veniam
+        molestias. Expedita perferendis maxime tempore odio, fugiat voluptates
+        atque hic officia.
+      </p>
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="selectores-avanzados">
+      <h2>Selectores avanzados</h2>
+      <h3>Selectores de hijos</h3>
+      <h4>Selectore de hijos directos</h4>
+      <ul class="direct-children">
+        <li><b>spring</b></li>
+        <li><b>summer</b></li>
+        <li><b>fall</b></li>
+        <li><b>wintter</b></li>
+      </ul>
+      <h4>Selector de hijos descendientes</h4>
+      <ul class="decendents-children">
+        <li><b>spring</b></li>
+        <li><b>summer</b></li>
+        <li><b>fall</b></li>
+        <li><b>wintter</b></li>
+      </ul>
+      <h3>Selectores de hermanos</h3>
+      <h4>Selector de hermanos (en general)</h4>
+      <ul>
+        <li><b>spring</b></li>
+        <li class="general-siblings"><b>summer</b></li>
+        <li><b>fall</b></li>
+        <li><b>wintter</b></li>
+      </ul>
+      <h4>Slector de hermanos adyacente</h4>
+      <ul>
+        <li><b>spring</b></li>
+        <li class="adjacent-siblings"><b>summer</b></li>
+        <li><b>fall</b></li>
+        <li><b>wintter</b></li>
+      </ul>
+      <h3>Selectores de atributos</h3>
+      <nav class="attribute-select">
+        <ul>
+          <li><a href="https://rumerch.com/itp" target="_blank">ITP</a></li>
+          <li><a href="http://rumerch.com/utp" target="_blank">UTP</a></li>
+          <li>
+            <a
+              class="menu-item uth button"
+              href="https://rumerch.com/uth"
+              target="_blank"
+              >UTH</a
+            >
+          </li>
+          <li>
+            <a href="http://rumerch.com" target="_blank">RUMERCH</a>
+          </li>
+          <li><a href="https://rumerch.com/blog" target="_blank">BLOG</a></li>
+          <li>
+            <a href="https://rumerch.com/mi-cuenta" target="_blank"
+              >MI CUENTA</a
+            >
+          </li>
+          <li>
+            <a href="index.html#temario-css" target="_blank"
+              >Regresar al temario</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h3>Selector universal (*)</h3>
+      <ul class="selector-universal">
+        <li><b>spring</b></li>
+        <li><b>summer</b></li>
+        <li><b>fall</b></li>
+        <li><b>wintter</b></li>
+      </ul>
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="pseudoclases">
+      <h2>Pseudoclases</h2>
+      <form class="form-pseudoclases">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="correo"
+          placeholder="Escribe tu correo"
+          required
+        />
+        <br />
+        <input type="submit" disabled />
+        <input type="submit" />
+      </form>
+      <nav class="menu-pseudoclases">
+        <a href="#seccion1">Sección 1</a>
+        <a href="#seccion2">Sección 2</a>
+        <a href="#seccion3">Sección 3</a>
+        <a href="#seccion4">Sección 4</a>
+        <a href="#seccion5">Sección 5</a>
+        <a href="#seccion6">Sección 6</a>
+      </nav>
+      <p class="p-pseudoclases">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, harum
+        voluptas fugit, velit minus cumque amet omnis doloremque, magnam
+        laboriosam vitae magni similique placeat delectus aspernatur culpa ad
+        tenetur ipsum.
+      </p>
+      <ol class="lista-pseudoclases">
+        <li>Mercurio</li>
+        <li>Venus</li>
+        <li>Tierra</li>
+        <li>Marte</li>
+        <li>Jupiter</li>
+        <li>Saturno</li>
+        <li>Urano</li>
+        <li>Neptuno</li>
+      </ol>
+      <article class="articulo-pseudoclases">
+        <header>Esto es una header</header>
+        <p>Esto es un p</p>
+        <div>Esto es una div</div>
+        <p>Esto es otra p</p>
+        <section>Esto es una section</section>
+        <p>Es un p</p>
+        <div>Es un div</div>
+        <p>Es un p</p>
+        <footer>Es un footer</footer>
+      </article>
+      <br /><br />
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="pseudoelementos">
+      <h2>Pseudoelementos</h2>
+      <p>
+        <i>Bandai Myth Cloth</i><span class="saga-geminis">Saga de Géminis</span
+        ><span class="saga-precio">500</span>
+      </p>
+      <p class="p-pseudoelementos">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+        voluptate officiis, magni labore dolor, nobis molestias reprehenderit
+        repudiandae numquam delectus porro neque exercitationem minima
+        perferendis, laborum animi qui! Cupiditate, nisi!
+      </p>
+      <input
+        class="input-pseudoelementos"
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+      />
+      <br />
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="agrupar-selectores">
+      <h2>Agrupar slectores</h2>
+      <form class="form-agrupar-selectores">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+        <input type="email" name="correo" placeholder="Escribe tu correo" />
+        <textarea
+          name="comentarios"
+          placeholder="Escribe tus comentarios"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" />
+      </form>
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="algoritmo-css">
+      <h2>El algoritmo de CSS</h2>
+      <ol type="I">
+        <li>La cáscada</li>
+        <li>La especificidad</li>
+        <li>La herencia</li>
+      </ol>
+      <blockquote
+        id="cita-marco"
+        class="cita-marco"
+        style="background-color: rebeccapurple"
+      >
+        Se tolerante con los demas y estricto contigo-
+        <cite>Marco Aurelio</cite>
+      </blockquote>
+      <a
+        href="https://www.youtube.com/watch?v=K3xmRF8ab1o&t=10855s"
+        target="_blank"
+        >Explicación</a
+      ><br />
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="style-normal-reset">
+      <h2>Reseteo y Normalización de estilos</h2>
+      <p>Establece los valores predeterminados de HTML a 0:</p>
+      <ul>
+        <li>
+          <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank"
+            >Reset.css</a
+          >
+        </li>
+        <li>
+          <a href="https://necolas.github.io/normalize.css/" target="_blank"
+            >Normalize.css</a
+          >
+        </li>
+      </ul>
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <article id="prefijos-navegacion">
+      <h2>Prefijos de los navegadores</h2>
+      <ul>
+        <li>
+          Navegadores de Microsoft <code><b>-ms-</b></code>
+        </li>
+        <li>
+          Firefox <code><b>-moz-</b></code>
+        </li>
+        <li>
+          Todos los demás navegadores <code><b>-webkit-</b></code>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://autoprefixer.github.io/">Autoprefixer css online</a>
+        </li>
+        <li><a href="https://caniuse.com/">Can i use?</a></li>
+      </ul>
+      <a href="index.html#temario-css">☝️</a>
+    </article>
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

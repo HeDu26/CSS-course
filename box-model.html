@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de caja en CSS</title>
+    <link rel="stylesheet" href="css/box-model.css" />
+  </head>
+  <body>
+    <h1>Modelo de caja CSS</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et nobis ullam
+      a. Debitis, ratione modi! Esse nobis voluptatem nostrum alias excepturi ad
+      porro minima sapiente odit dolorem? Adipisci, non et!
+    </p>
+    <hr />
+    <div class="caja-uno">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nulla
+      quisquam aliquid et eum, distinctio dolorum ipsam magnam dignissimos,
+      pariatur veniam ratione, dicta rerum illum temporibus nihil eligendi ea
+      sed.
+    </div>
+    <div class="caja-dos">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+      numquam dolorem, eius atque accusantium assumenda quidem in neque modi
+      nisi consequuntur nobis iste, voluptates dolor id, minima inventore
+      distinctio. Quaerat.
+    </div>
+    <hr />
+    <h2>Cajas de línea vs Cajas de bloque</h2>
+    <span class="caja-linea">Esto es una caja de línea</span>
+    <span>Esto es una span</span>
+    <div class="caja-bloque">Esto es una caja de bloque</div>
+    <hr />
+    <h2>Propiedad Display(visualizar)</h2>
+    <div class="caja-none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      necessitatibus quibusdam eligendi et laborum doloribus perspiciatis id
+      tempore distinctio, fugiat officia. Repellendus quas, minima vero ipsa
+      sint maxime ad et?
+    </div>
+    <span class="caja-linea-bloque"
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sed quam
+      eligendi nihil nobis molestiae corrupti similique tempore quisquam, error
+      repudiandae, rem porro quasi sapiente voluptatibus! Soluta aspernatur
+      temporibus autem?</span
+    >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore
+      repudiandae, ut labore quos beatae a delectus. Asperiores culpa ad autem
+      eligendi sunt labore ullam similique sequi! Nemo, consequuntur maiores.
+    </p>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ol>
+    <table>
+      <tr>
+        <td>celda 1</td>
+        <td>celda 2</td>
+      </tr>
+      <tr>
+        <td>celda 3</td>
+        <td>celda 4</td>
+      </tr>
+      <tr>
+        <td>celda 5</td>
+        <td>celda 6</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>Propiedad visibility</h2>
+    <div class="caja-none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      necessitatibus quibusdam eligendi et laborum doloribus perspiciatis id
+      tempore distinctio, fugiat officia. Repellendus quas, minima vero ipsa
+      sint maxime ad et?
+    </div>
+    <div class="caja-hidden">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      necessitatibus quibusdam eligendi et laborum doloribus perspiciatis id
+      tempore distinctio, fugiat officia. Repellendus quas, minima vero ipsa
+      sint maxime ad et?
+    </div>
+    <h2>Propiedad Overflow</h2>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus
+      vitae, velit, modi optio aliquam commodi ut fugiat ab esse sed,
+      exercitationem nulla numquam voluptatem error inventore odio! Debitis,
+      facilis!
+    </p>
+    <hr />
+    <h2>Tamaño de caja</h2>
+    <div class="box-sizing-content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+      necessitatibus tempore officia quae quibusdam? Unde repellat alias sint.
+      Possimus eaque molestiae placeat veritatis error corporis aliquam
+      assumenda, eius fuga vitae.
+    </div>
+    <div class="box-sizing-border">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+      necessitatibus tempore officia quae quibusdam? Unde repellat alias sint.
+      Possimus eaque molestiae placeat veritatis error corporis aliquam
+      assumenda, eius fuga vitae.
+    </div>
+    <article class="container-col-3">
+      <section class="item">sección 1</section>
+      <section class="item">sección 2</section>
+      <section class="item">sección 3</section>
+    </article>
+    <hr />
+    <h2>Propiedad float & clear</h2>
+    <article class="container-floats">
+      <section class="float-right">Este elemento flota a la derecha</section>
+      <section class="float-left">Este elmento flota a la izquierda</section>
+    </article>
+    <div class="clearfix"></div>
+    <article>
+      <section class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+        reprehenderit! Temporibus voluptate, facilis quas eos at consectetur
+        omnis tempore delectus? Quia quod quisquam, aperiam accusamus voluptate
+        quos! Non, fuga distinctio.
+      </section>
+    </article>
+    <hr />
+    <h2>Colapso de márgenes verticales</h2>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas,
+      unde labore nobis voluptatum dicta optio, saepe eum repudiandae expedita
+      voluptatem veniam culpa cupiditate? Ipsum quisquam eveniet voluptatum
+      dicta non.
+    </div>
+    <article class="margin-collapse">
+      <section class="">sección 1</section>
+      <section class="">sección 2</section>
+      <section>
+        <span>span 1</span><span>span 2</span><span>span 3</span>
+      </section>
+    </article>
+    <hr />
+    <h2>Centrado de cajas</h2>
+    <article class="sitio-web">
+      <header>Cabecera</header>
+      <main>Contenido principal</main>
+      <footer>Pie de página</footer>
+    </article>
+    <a href="index.html#temario-css">☝️</a>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

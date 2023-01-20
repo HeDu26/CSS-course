@@ -1,0 +1,109 @@
+/* 
+ESTILOS DE FUENTE:
+
+font-family
+font-size
+font-style
+font-variant
+font-weight
+font 
+*/
+
+.font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  font-style: oblique;
+  font-variant: small-caps;
+  line-height: 3;
+  font: italic small-caps bold 24px / 1.5 monospace;
+}
+
+/* Formato woff o woff2 Web Open Font Format */
+@font-face {
+  font-family: "chalet";
+  src: url("../assets/ZillaSlab-Light.ttf") format(ttf);
+}
+
+.chalet {
+  font-family: "chalet", sans-serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+/* 
+Text aling (position)
+Text-decoration (subrayado, etc.)
+Text indent (sangría)
+Text-overflow 
+  overflow: hidden
+  white-space: nowrap;
+Text.transform
+letter-spacing
+white-space
+word-break
+word-spacing
+writing-mode
+*/
+
+.text {
+  text-align: left;
+  text-decoration: overline;
+  text-decoration: none;
+  text-indent: 3rem;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+  letter-spacing: 0.5rem;
+  word-break: break-all;
+  writing-mode: vertical-lr;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+.text-overflow {
+  background-color: blanchedalmond;
+  border: thin solid black;
+  padding: 1rem;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.word-spacing {
+  font-size: 2rem;
+  word-spacing: 1rem;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
