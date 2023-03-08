@@ -11,6 +11,9 @@ h1 {
   color: orangered;
   background-color: black;
   text-align: center;
+  position: sticky;
+  z-index: 998;
+  top: 10px;
 }
 
 /* 

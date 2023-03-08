@@ -36,7 +36,7 @@ Posicionamiento CSS
   background-color: yellow;
   position: static;
   top: 10px;
-  left: 10px;
+  left: 100px;
 }
 
 /* relative: El elemento conserva sus dimensiones y posición original (El espacio del elemento esta reservado) en el flujo del documento. Si se mueve toma como referencia su posición original*/
@@ -102,7 +102,7 @@ Posicionamiento CSS
   /* right: 20px;
   bottom: 10px; */
   top: 50px;
-  left: 400px;
+  left: 500px;
 }
 
 /* Sticky: es una combinación de posicionamiento relative y fixed, para este posicionamiento las propiedades de top, left, bottom y right no mueven el elemento, sirven como un punto de referencia, mientras no lleguen a ese valor el elemento se comporta como relative, cuando llega se convierte en fixed
