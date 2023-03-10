@@ -1,6 +1,6 @@
 # CSS course
 
-## Curso 4. Efectos visuales y Movimientos en CSS
+## Efectos visuales
 
 ### Sombras
 
@@ -171,3 +171,119 @@ background-image: repeating-radial-gradient(
 ```
 
 ### Formas (shape-outside)
+
+```css
+.shape-1 {
+  margin: 0 1rem 0 0;
+  shape-outside: circle();
+  shape-outside: ellipse();
+  shape-outside: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+}
+```
+
+### Scroll
+
+#### scroll-margin
+
+ej. **_scroll-margin-top_** cuando vayamos a una ancla interna, no nos colota en top: 0; sino que nos coloca a la distancia que especifíquemos
+
+```css
+[id] {
+  scroll-margin-top: 7.5ex;
+}
+```
+
+#### Scroll-behavior
+
+- Da efecto a la interacción entre anclas de una página
+
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
+
+#### scroll-snap-type & scroll-snap-align
+
+```css
+/* Se aplica al contenedor principal */
+.slides {
+  width: 100%;
+  height: 100vh; /* Obligatorio*/
+  overflow-y: scroll; /* Obligatorio */
+  /* scroll-snap-type: [x|y|inline|block][mandatory| proximity]; */
+  scroll-snap-type: block mandatory;
+}
+
+/* Se aplica a las secciones diferentes */
+.slide {
+  width: 100%;
+  height: inherit;
+  background-color: #1e2345;
+  /* scroll-snap-align: none;
+  scroll-snap-align: start;
+  scroll-snap-align: end; */
+  scroll-snap-align: center;
+}
+```
+
+### Texto con degradado
+
+- Lo ideal es agregar a una clase a los parrafos que queremos degradar
+- Aplica lo mismo que que en degradador, lineal, conico, radial, etc.
+
+```css
+.gradient-text {
+  background-image: linear-gradient(45deg, magenta, yellow);
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+```
+
+## Movimientos en CSS
+
+### Transiciones
+
+1. _transition-property_
+2. _transition-duration_
+   _transition-timing-function: none linear ease ease-in ease-out ease-in-out steps_
+3. _transition-delay_
+4. _transition: property duration timing-funciton delay_
+
+   [CSS_animated_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+```css
+.transitions .box {
+  background-color: magenta;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+  transition: border-color 3s linear 1s;
+  transition: all 2s ease-in-out 250ms;
+}
+
+.transitions .box:hover {
+  background-color: cyan;
+  border-color: yellowgreen;
+  border-radius: 50%;
+}
+```
